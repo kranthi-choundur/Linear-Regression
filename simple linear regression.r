@@ -60,13 +60,4 @@ plot(testing_set$gre,testing_set$coa,type="p",
 lines(testing_set$gre,y_predict,type='o',col='red')
 
 
-#visualization using ggplot
 
-library(ggplot2)
-
-ggplot(data,geom_point(aes(x=testing_set$gre,y=testing_set$coa,
-                      color='blue'))
-         +geom_line(aes(x=testing_set$gre,y=y_predict,
-                      color='red'))
-                  +ggtitle("GRE SCORE VERSUS CHANCE OF ADMIT")
-                  +xlab("GRE SCORE")+ylab("CHANCE OF ADMIT"))
